@@ -6,6 +6,7 @@ import org.json.JSONException;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
@@ -88,6 +89,7 @@ public class Calculation {
 //        sdf.setTimeZone(TimeZone.getTimeZone("Europe/Moscow"));
 //        String date = sdf.format(today);
 //        System.out.println(date);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         boolean free =false;
         String ans = new String("");
         for (Transport tr : MC.worker) {
@@ -103,7 +105,7 @@ public class Calculation {
                 tr.fordertime = tr.fordertime.plusMinutes((int) deltime);// время выезда из фирмы для доставки 1 заказа
                 i.av = false;
                 free = true;
-               ans= tr.name + " " + tr.alltime + " " + tr.fordertime + " "+i.name_prod+" "+i.place.name;
+                ans= formatter.format(tr.fordertime.plusMinutes(tr.alltime));
                 return ans;
             }
             if (!tr.Allorder.get(tr.numoforder() - 1).place.name.equals(MC.address)) {
@@ -131,8 +133,8 @@ public class Calculation {
                     tr.available = true;
                     tr.Allorder.add(i);
                     i.av = false;
-//                    free = true;
-                    ans= tr.name + " " + tr.alltime + " " + tr.fordertime + " "+i.name_prod+" "+i.place.name;
+                    free = true;
+                    ans= formatter.format(tr.fordertime.plusMinutes(tr.alltime));
                     return ans;
                 } else {
                     double razn = -ChronoUnit.MINUTES.between(tr.fordertime.plusMinutes(tr.alltime + deltime), i.t_order.plusMinutes(i.time));
@@ -140,7 +142,7 @@ public class Calculation {
                     {
                         tr.addProduct(i);
                         tr.alltime = -ChronoUnit.MINUTES.between(i.t_order.plusMinutes(i.time), tr.fordertime);
-                        ans= tr.name + " " + tr.alltime + " " + tr.fordertime + " "+i.name_prod+" "+i.place.name;
+                        ans= formatter.format(tr.fordertime.plusMinutes(tr.alltime));
                         i.av = false;
                         free = true;
                         return ans;
@@ -149,7 +151,7 @@ public class Calculation {
             }
         }
         System.out.println(true+" is"+ans);
-        if(!true)  ans="Sorry, but All couriers are busy";
+        if(!true)  ans="Sorry, but all couriers are busy";
         return ans;
     }
 }
