@@ -56,23 +56,30 @@ public class MapeController {
 
     @FXML
     void OK_CLICKED(ActionEvent event)
-    {
+    {      Exception.setVisible(false);
        String addres=AddressField.getText().toString();
+        Point place= new Point();
+        boolean bad =false;
        try {
-           Point place = Geodecoding.decode(addres);
+           place = Geodecoding.decode(addres);
        }
        catch (IOException e)
        {
-
+            Exception.setText("Bad address! Try again!");
+            Exception.setVisible(true);
+           bad=true;
        }
        catch (JSONException e)
        {
-
+           Exception.setText("Bad address! Try again!");
+           Exception.setVisible(true);
+           bad=true;
        }
-//        webEngine.executeScript("" +
-//                "window.lat = " + lat + ";" +
-//                "window.lon = " + lon + ";" +
-//                "document.goToLocation(window.lat, window.lon);");
+       if(!bad)
+        webEngine.executeScript("" +
+                "window.lat = " + place.Getlat() + ";" +
+                "window.lon = " + place.Getlng() + ";" +
+                "document.goToLocation(window.lat, window.lon);");
     }
     @FXML
     void initialize() {

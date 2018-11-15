@@ -34,7 +34,7 @@
       <TextField fx:id="OrderField" layoutX="9.0" layoutY="200.0" prefHeight="28.0" prefWidth="160.0" promptText="Order" />
       <TextField fx:id="TimeField" layoutX="9.0" layoutY="250.0" prefHeight="28.0" prefWidth="160.0" promptText="Time" />
       <WebView fx:id="Map" layoutX="180.0" prefHeight="400.0" prefWidth="422.0" />
-      <TextField fx:id="Exception" layoutX="276.0" layoutY="127.0" style="-fx-text-inner-color: red;">
+      <TextField fx:id="Exception" editable="false" layoutX="276.0" layoutY="127.0" style="-fx-text-inner-color: red;">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
