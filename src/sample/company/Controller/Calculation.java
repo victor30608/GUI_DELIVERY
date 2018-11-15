@@ -150,7 +150,6 @@ public class Calculation {
                 }
             }
         }
-        System.out.println(free+" is"+ans);
         if(!free)  ans="Sorry, but all couriers are busy";
         return ans;
     }

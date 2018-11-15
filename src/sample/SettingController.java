@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -55,9 +56,13 @@ public class SettingController {
             e.printStackTrace();
         }
     }
+    void savechanged()
+    {
+
+    }
     @FXML
     void Accept_Clicked(ActionEvent event)
-    {
+    {  
         Company my = new Company();
         my.address=CompanyAddress.getText().trim();
         try {
