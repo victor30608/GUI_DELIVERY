@@ -8,53 +8,56 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #29467F;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #29467F;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingController">
     <children>
-        <AnchorPane layoutY="-3.0" prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #FFBF40;">
+        <AnchorPane layoutY="-3.0" prefHeight="82.0" prefWidth="1000.0" style="-fx-background-color: #FFBF40;">
          <children>
-            <Label layoutX="190.0" layoutY="33.0" text="Company settings">
+            <Label layoutX="380.0" layoutY="26.0" text="Company settings">
                <font>
                   <Font name="Droid Sans Mono" size="25.0" />
                </font>
             </Label>
-            <Button fx:id="Back_Button" mnemonicParsing="false" onAction="#Back_Action" prefHeight="54.0" prefWidth="56.0" style="-fx-background-color: #FFBF40;">
-               <graphic>
-                  <ImageView fitHeight="26.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/Back.png" />
-                     </image>
-                  </ImageView>
-               </graphic></Button>
+            <Button fx:id="Back_Button" mnemonicParsing="false" onAction="#Back_Action" prefHeight="60.0" prefWidth="67.0" style="-fx-background-color: #FFBF40;" />
+            <ImageView fitHeight="26.0" fitWidth="57.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Back.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
-      <Label layoutX="78.0" layoutY="138.0" text="Address" textFill="WHITE">
+      <Label layoutX="55.0" layoutY="140.0" text="Address" textFill="WHITE">
          <font>
-            <Font size="16.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="78.0" layoutY="183.0" text="Transport amount:" textFill="WHITE">
+      <Label layoutX="577.0" layoutY="246.0" text="Transport amount:" textFill="WHITE">
          <font>
-            <Font size="16.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="284.0" layoutY="187.0" text="Cars" textFill="WHITE">
+      <Label layoutX="577.0" layoutY="320.0" text="Cars" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="284.0" layoutY="237.0" text="Men" textFill="WHITE">
+      <Label layoutX="577.0" layoutY="370.0" text="Men" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="274.0" layoutY="287.0" text="Quadro" textFill="WHITE">
+      <Label layoutX="567.0" layoutY="420.0" text="Quadro" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Button fx:id="Accept_Button" layoutX="288.0" layoutY="348.0" mnemonicParsing="false" onAction="#Accept_Clicked" prefHeight="10.0" prefWidth="47.0" style="-fx-background-color: #6C8CD5;" text="OK" />
-      <TextField fx:id="CompanyAddress" layoutX="153.0" layoutY="137.0" prefHeight="28.0" prefWidth="374.0" promptText="Company" />
-      <TextField fx:id="CarsAmount" layoutX="356.0" layoutY="185.0" />
-      <TextField fx:id="MenAmount" layoutX="356.0" layoutY="235.0" />
-      <TextField fx:id="QuadroAmount" layoutX="356.0" layoutY="285.0" />
+      <Button fx:id="Accept_Button" layoutX="757.0" layoutY="533.0" mnemonicParsing="false" onAction="#Accept_Clicked" prefHeight="10.0" prefWidth="47.0" style="-fx-background-color: #6C8CD5;" text="OK" />
+      <TextField fx:id="CompanyAddress" layoutX="153.0" layoutY="137.0" prefHeight="38.0" prefWidth="728.0" promptText="Company" />
+      <TextField fx:id="CarsAmount" layoutX="649.0" layoutY="318.0" prefHeight="38.0" prefWidth="172.0" />
+      <TextField fx:id="MenAmount" layoutX="649.0" layoutY="368.0" prefHeight="38.0" prefWidth="172.0" />
+      <TextField fx:id="QuadroAmount" layoutX="649.0" layoutY="418.0" prefHeight="38.0" prefWidth="172.0" />
+      <ImageView fitHeight="291.0" fitWidth="316.0" layoutX="133.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/delivryicon.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
