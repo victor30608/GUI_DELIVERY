@@ -20,12 +20,14 @@
                </font>
             </Label>
             
-            <Button fx:id="Back_Button" mnemonicParsing="false" onAction="#Back_Action" prefHeight="38.0" prefWidth="57.0" style="-fx-background-color: #FFBF40;" />
-            <ImageView fitHeight="26.0" fitWidth="57.0" layoutX="12.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/Back.png" />
-               </image>
-            </ImageView>
+            <Button fx:id="Back_Button" mnemonicParsing="false" onAction="#Back_Action" prefHeight="38.0" prefWidth="57.0" style="-fx-background-color: #FFBF40;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
             <ImageView fitHeight="87.0" fitWidth="97.0" layoutX="96.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/delivryicon.png" />
