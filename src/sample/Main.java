@@ -12,10 +12,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        
         primaryStage.setTitle("Delivery");
         primaryStage.getIcons().add(new Image("sample/assets/delivryicon.png"));
-
         primaryStage.setScene(new Scene(root, 1000, 700));
+        primaryStage.setResizable(false);
+        
         primaryStage.show();
         Controller cl = new Controller();
        // cl.initialize();
