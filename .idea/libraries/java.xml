@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/google-maps-services-java-master/google-maps-services-java-master/src/main/java" />
+      <root url="file://$PROJECT_DIR$/google-maps-services-java-master/google-maps-services-java-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

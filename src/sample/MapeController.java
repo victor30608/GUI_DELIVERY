@@ -4,22 +4,28 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.event.ActionEvent;
 import javafx.stage.Stage;
+import org.json.JSONException;
+import sample.company.Controller.Geodecoding;
+import sample.company.Point;
 
 import java.io.IOException;
+import java.net.URL;
 
 public class MapeController {
-
-    @FXML
-    private ImageView mapImage;
-
+    private WebEngine webEngine;
     @FXML
     private Button OK_Button;
+
+    @FXML
+    private Button Back_Button;
 
     @FXML
     private TextField AddressField;
@@ -31,8 +37,9 @@ public class MapeController {
     private TextField TimeField;
 
     @FXML
-    private Button BackToSample;
-
+    private WebView Map;
+    @FXML
+    private TextField Exception;
     @FXML
     void Back_Action(ActionEvent event) {
         try {
@@ -50,6 +57,29 @@ public class MapeController {
     @FXML
     void OK_CLICKED(ActionEvent event)
     {
+       String addres=AddressField.getText().toString();
+       try {
+           Point place = Geodecoding.decode(addres);
+       }
+       catch (IOException e)
+       {
+
+       }
+       catch (JSONException e)
+       {
+
+       }
+//        webEngine.executeScript("" +
+//                "window.lat = " + lat + ";" +
+//                "window.lon = " + lon + ";" +
+//                "document.goToLocation(window.lat, window.lon);");
+    }
+    @FXML
+    void initialize() {
+        Exception.setVisible(false);
+        webEngine = Map.getEngine();
+        final URL urlGoogleMaps = getClass().getResource("demo.html");
+        webEngine.load(urlGoogleMaps.toExternalForm());
 
     }
 

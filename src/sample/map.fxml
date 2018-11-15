@@ -7,13 +7,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #29467F;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MapeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #29467F;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MapeController">
    <children>
-      <ImageView fx:id="mapImage" fitHeight="400.0" fitWidth="430.0" layoutX="178.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@assets/map1.jpg" />
-         </image></ImageView>
       <Button fx:id="OK_Button" layoutX="126.0" layoutY="305.0" mnemonicParsing="false" onAction="#OK_CLICKED" style="-fx-background-color: #6C8CD5;" text="ok" />
       <AnchorPane layoutX="-2.0" prefHeight="138.0" prefWidth="181.0" style="-fx-background-color: #FFBF40 #FFAA00 #A66F00;">
          <children>
@@ -36,5 +33,11 @@
       <TextField fx:id="AddressField" layoutX="9.0" layoutY="156.0" prefHeight="28.0" prefWidth="160.0" promptText="Address" />
       <TextField fx:id="OrderField" layoutX="9.0" layoutY="200.0" prefHeight="28.0" prefWidth="160.0" promptText="Order" />
       <TextField fx:id="TimeField" layoutX="9.0" layoutY="250.0" prefHeight="28.0" prefWidth="160.0" promptText="Time" />
+      <WebView fx:id="Map" layoutX="180.0" prefHeight="400.0" prefWidth="422.0" />
+      <TextField fx:id="Exception" layoutX="276.0" layoutY="127.0" style="-fx-text-inner-color: red;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
