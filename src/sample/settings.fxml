@@ -52,7 +52,7 @@
          </font>
       </Label>
       <Button fx:id="Accept_Button" layoutX="288.0" layoutY="348.0" mnemonicParsing="false" onAction="#Accept_Clicked" prefHeight="10.0" prefWidth="47.0" style="-fx-background-color: #6C8CD5;" text="OK" />
-      <TextField fx:id="CompanyAddress" layoutX="153.0" layoutY="137.0" prefHeight="28.0" prefWidth="374.0" promptText="Address" />
+      <TextField fx:id="CompanyAddress" layoutX="153.0" layoutY="137.0" prefHeight="28.0" prefWidth="374.0" promptText="Company" />
       <TextField fx:id="CarsAmount" layoutX="356.0" layoutY="185.0" />
       <TextField fx:id="MenAmount" layoutX="356.0" layoutY="235.0" />
       <TextField fx:id="QuadroAmount" layoutX="356.0" layoutY="285.0" />
