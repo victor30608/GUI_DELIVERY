@@ -4,26 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/DialogFX.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/DialogFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/DialogFXBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/DialogFXController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/dialog-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/dialog-info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/dialog-ok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/dialog-question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DialogFX/dialog-warning.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delivery_proj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Delivery_proj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Delivery_proj/sample/MapeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Delivery_proj/sample/MapeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Delivery_proj/sample/company/Controller/Calculation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Delivery_proj/sample/company/Controller/Calculation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MapeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MapeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/company/Controller/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/company/Controller/Calculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workers.json" beforeDir="false" afterPath="$PROJECT_DIR$/workers.json" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -192,14 +173,14 @@
           <entry key="class" value="3" />
           <entry key="fxml" value="45" />
           <entry key="html" value="12" />
-          <entry key="java" value="1999" />
+          <entry key="java" value="2004" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="HTML" value="12" />
-          <entry key="JAVA" value="1999" />
+          <entry key="JAVA" value="2004" />
           <entry key="XML" value="45" />
         </counts>
       </usages-collector>
@@ -265,8 +246,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/MapeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+            <state relative-caret-position="328">
+              <caret line="97" column="49" lean-forward="true" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -448,7 +429,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542304077090" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542304475452" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sample/lib/org" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -962,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/MapeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+        <state relative-caret-position="328">
+          <caret line="97" column="49" lean-forward="true" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
