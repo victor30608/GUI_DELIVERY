@@ -17,12 +17,14 @@
                   <Font name="Droid Sans Mono" size="25.0" />
                </font>
             </Label>
-            <Button fx:id="Back_Button" mnemonicParsing="false" onAction="#Back_Action" prefHeight="60.0" prefWidth="67.0" style="-fx-background-color: #FFBF40;" />
-            <ImageView fitHeight="26.0" fitWidth="57.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/Back.png" />
-               </image>
-            </ImageView>
+            <Button fx:id="Back_Button" mnemonicParsing="false" onAction="#Back_Action" prefHeight="60.0" prefWidth="67.0" style="-fx-background-color: #FFBF40;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
          </children></AnchorPane>
       <Label layoutX="55.0" layoutY="140.0" text="Address" textFill="WHITE">
          <font>
