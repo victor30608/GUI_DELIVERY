@@ -15,7 +15,7 @@ public class Main extends Application {
         primaryStage.setTitle("Delivery");
         primaryStage.getIcons().add(new Image("sample/assets/delivryicon.png"));
 
-        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setScene(new Scene(root, 1000, 700));
         primaryStage.show();
         Controller cl = new Controller();
        // cl.initialize();
